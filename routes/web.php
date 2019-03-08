@@ -89,7 +89,7 @@ Route::get('novost', function(){
 
 Route::get('projekti/{id}', function($id){
     $categories = Category::all();
-    $projects = Project::where('subcat_id', '=', $id)->where('published', '=', 1)->get();
+    $projects = Project::where('cat_id', '=', $id)->where('published', '=', 1)->get();
     $subcats    = Category::where('parent', '=', $id)->get();
 
     $category_name = Category::where('id', '=', $id)->get()[0]->name;
