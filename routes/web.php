@@ -89,7 +89,7 @@ Route::get('novost', function(){
 
 Route::get('projekti/{id}', function($id){
     $categories = Category::all();
-    $projects   = Project::where('cat_id', '=', $id)->get();
+    $projects = Project::where('subcat_id', '=', $id)->where('published', '=', 1)->get();
     $subcats    = Category::where('parent', '=', $id)->get();
 
     $category_name = Category::where('id', '=', $id)->get()[0]->name;
@@ -100,10 +100,11 @@ Route::get('projekti/{id}', function($id){
 
 Route::get('projekti/{id}/{cat_id}', function($id, $cat_id){
     $categories = Category::all();
-    $projects = Project::where('subcat_id', '=', $cat_id)->get();
+    $projects = Project::where('subcat_id', '=', $cat_id)->where('published', '=', 1)->get();
     $subcats    = Category::where('parent', '=', $id)->get();
 
     $category_name = Category::where('id', '=', $id)->get()[0]->name;
+
 
     return view('projects', compact('projects', 'categories', 'id', 'subcats', 'category_name'));
 });
@@ -164,6 +165,7 @@ Route::resource('administrator_categories', 'CategoriesController');
 /*** projects ***/
 Route::resource('administrator_projects', 'ProjectController');
 Route::get('administrator_projects/{cat_id}/{project_id}', 'ProjectController@destroy_and_redirect');
+Route::get('administrator_projects/{cat_id}/{project_id}/{update}', 'ProjectController@visible_or_not');
 
 Route::get('administrator_subcategories', function (){
     $categories = Category::all();

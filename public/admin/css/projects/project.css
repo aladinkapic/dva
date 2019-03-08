@@ -64,6 +64,7 @@
 .projects_w .single_project .project_shadow .delete_project{position:absolute; right:10px; top:10px; width:26px; height:26px; text-align:center; background:#333;}
 .projects_w .single_project .project_shadow .delete_project2{right:40px;}
 .projects_w .single_project .project_shadow .delete_project:hover{cursor:pointer; background:#FF0D53;}
+.projects_w .single_project .project_shadow .delete_project2:hover{background:#3f6ad8;}
 .projects_w .single_project .project_shadow .delete_project i{color:#fff; font-size:14px; margin-top:6px;}
 
 

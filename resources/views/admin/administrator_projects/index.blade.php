@@ -40,9 +40,10 @@
                     </a>
 
 
-                    <a href="/administrator_projects/{{$id}}/{{$project->id}}">
+                    <a href="/administrator_projects/{{$id}}/{{$project->id}}/{{$project->published}}">
                         <div class="delete_project delete_project2">
-                            <i class="far fa-trash-alt"></i>
+                            @if($project->published) <i class="fas fa-eye-slash" title="Stavite projekat kao neobjavljen"></i> @endif
+                            @if(!$project->published) <i class="fas fa-eye" title="Objavite projekat"></i> @endif
                         </div>
                     </a>
 
