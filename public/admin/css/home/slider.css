@@ -1,0 +1,43 @@
+/*** Insert new slider ***/
+
+.image_part{position:relative; left:0px; top:0px; width:calc(100% - 60px); height:380px; border:1px solid rgba(0,0,0,0.1); background:#fff; flex-wrap:wrap; display:flex;}
+.image_part .first_image{position:relative; text-align:center; top:0px; width:calc(100% - 301px); border-right:1px solid rgba(0,0,0,0.1);}
+.image_part .mobile_image{position:relative; text-align:center; top:0px; width:300px; }
+.image_part .first_image form, .image_part .mobile_image form{position:relative; height:auto; vertical-align:middle;  width:100%; left:0px;}
+.image_part .first_image h1, .image_part .mobile_image h1{position:relative; vertical-align:middle; opacity:0.3; margin-top:165px;}
+.image_part .first_image:hover h1, .image_part .mobile_image:hover h1{opacity:1;}
+.image_part .first_image h1:hover, .image_part .mobile_image h1:hover{cursor:pointer;}
+.image_part .first_image:hover, .image_part .mobile_image:hover{background:rgba(0,0,0,0.1);}
+.image_part .first_image img, .image_part .mobile_image img{position:absolute; left:0px; top:0px; right:0px; bottom:0px; max-width:100%; max-height:100%; margin:auto;}
+
+.image_part .hidden_input{display:none;}
+
+.form_part{position:relative; border-radius:3px; left:0px; top:0px; width:calc(100% - 100px); margin-top:40px; height:auto; background:#fff; padding:20px;}
+.form_part form{position:relative; width:100%; height:auto;}
+.form_part .right_input{position:relative; left:0px; top:0px; width:100%; height:40px; border:1px solid rgba(0,0,0,0.1); margin-bottom:10px;}
+.form_part .right_input input,
+.form_part .right_input textarea{position:absolute; left:0px; top:0px; width:100%; height:100%; border:none; background:none; padding-left:20px; font-family:poppins_r; resize:none;}
+.form_part .right_input textarea{padding-top:8px;}
+
+.form_part .input_save{position:relative; width:220px; height:35px; border-radius:3px; background:#3f6ad8;}
+.form_part .input_save input{position:absolute; left:0px; top:0px; width:100%; height:100%; border:none; background:none; color:#fff; font-family:poppins_r;}
+.form_part .input_save input:hover{cursor:pointer;}
+
+/*** End of insert new slider ***/
+
+
+
+/******************** SLIDER PREVIEW *********************/
+.main_slider{position:relative; left:0px; top:0px; width:calc(100% - 60px); }
+.main_slider .slider_shadow .text_wrapper h1{margin-top:30px; font-size:30px;}
+
+
+
+
+
+
+
+
+
+
+

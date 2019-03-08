@@ -1,0 +1,50 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height:8px;
+}
+ 
+::-webkit-scrollbar-track {
+   /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); */
+   background-color: #524646;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #cee002;
+    outline: 1px solid slategrey;
+    border-radius: 3px;
+}
+
+
+@font-face {
+    font-family: apple_t;
+    src: url(apple_t.ttf);
+}
+@font-face {
+    font-family: apple_r;
+    src: url(apple_r.ttf);
+}
+
+@font-face {
+    font-family: poppins_t;
+    src: url(fonts/Poppins-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: poppins_r;
+    src: url(fonts/Poppins-Regular.otf);
+}
+
+
+@font-face {
+    font-family: poppins_m;
+    src: url(fonts/Poppins-Medium.otf);
+}
+
+
+
+body{position:relative; left:60px; top:100px; width:calc(100% - 120px); margin:0px; padding:0px; font-family:apple_t;}
+a{text-decoration:none; color:#333;}
+
+@media screen and (max-width: 800px){
+    body{left:20px; width:calc(100% - 40px);   margin:0px; padding:0px; }
+}

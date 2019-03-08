@@ -1,0 +1,134 @@
+/*** header with line ***/
+
+.header_one{position:relative; left:calc(50% - 700px); top:0px; width:1400px; min-height:100px; margin-top:50px;}
+.header_one .header_line{position:absolute; left:0px; top:26px; width:160px; height:4px; background:#cee002;}
+.header_one h1{position:relative; left:300px; font-family:poppins_m; font-weight:lighter; font-size:50px; margin-left:0px; margin-top:0px; width:calc(100% - 300px);}
+
+
+/*** just one image ***/
+
+.single_image{position:relative; left:0px; top:0px; width:100%; height:auto;}
+
+.single_image .swiper-container{position:relative; top:0px; width:100%; height:auto; }
+.single_image .swiper-container .swiper-wrapper{position:relative; left:0px; top:0px; width:100%; height:auto; }
+.single_image .swiper-container .swiper-wrapper .swiper-slide{position:relative; left:0px; top:0px; width:100%; height:auto;  padding-bottom:50px;}
+
+.single_image .swiper-container .swiper-wrapper .swiper-slide img{position:relative; left:0px; top:0px; width:100%;}
+
+
+/*** text aligned right ***/
+
+.right_text{position:relative; left:calc(50% - 700px); margin-top:30px; width:1400px; min-height:200px; padding-bottom:30px;}
+.right_text .header_line{position:absolute; left:0px; top:26px; width:160px; height:4px; background:#cee002;}
+.right_text .right_text_box{position:relative; left:300px; width:calc(100% - 300px);}
+.right_text .right_text_box h3{font-family:poppins_m; font-size:25px; padding-top:10px;}
+.right_text .right_text_box p{font-family:poppins_t; text-align:justify; font-size:16px;}
+
+
+/*** two images ***/
+.two_images{position:relative; left:calc(50% - 700px); width:1400px; text-align:center; display:table;}
+.two_images .two_images_image{position:relative; left:0px; top:0px; width:calc(50% - 15px); margin:0px 6px; display:table-cell; text-align:justify;}
+.two_images .two_images_image img{position:relative; left:0px; top:0px; width:calc(100% - 15px);}
+.two_images .two_images_image2 img{left:15px;}
+
+
+/*** OUR TEAM ***/
+.our_team{position:relative; left:calc(50% - 700px); width:1400px;  margin-top:60px; padding-bottom:30px;}
+.our_team .header_line{position:absolute; left:0px; top:12px; width:160px; height:4px; background:#cee002;}
+.our_team .our_team_us{position:relative; left:300px; top:0px; width:calc(100% - 270px); display:flex; padding-bottom:80px; justify-content:initial; flex-wrap:wrap; justify-content:flex-start; flex-direction:row; text-align:left;}
+
+.our_team .our_team_us .team_section{position:relative; left:0px; top:0px; width:100%; height:80px; }
+.our_team .our_team_us .team_section h4{font-family:poppins_r; position:absolute;  font-size:22px; margin-top:0px;}
+
+.our_team .our_team_us .our_team_me{position:relative; left:0px; margin-top:30px; margin-right:30px; width:calc(33.33% - 30px); background:red;}
+.our_team .our_team_us .our_team_me img{position:relative; left:0px; top:0px; width:100%;}
+
+.our_team .our_team_us .our_team_me .mine_wrapper{position:absolute; left:0px; top:0px; width:100%; height:100%; background:rgba(206,224,2,0.6); opacity:0; transition:all 0.2s;}
+.our_team .our_team_us .our_team_me:hover .mine_wrapper{opacity:1; cursor:pointer;}
+.our_team .our_team_us .our_team_me .mine_wrapper h4{position:absolute; left:20px; bottom:70px; margin:0px; font-family:poppins_r; font-size:20px; color:#000;}
+.our_team .our_team_us .our_team_me .mine_wrapper p{position:absolute; left:20px; bottom:45px; margin:0px; font-family:poppins_r; font-size:15px;}
+.our_team .our_team_us .our_team_me .mine_wrapper .mine_social{position:absolute; left:20px; bottom:10px; width:calc(100% - 40px); height:25px;}
+.our_team .our_team_us .our_team_me .mine_wrapper .mine_social i{color:#000; font-size:22px; margin-right:10px;}
+
+/*.our_team .our_team_us .our_team_me{position:relative; left:0px; top:0px; background:red; height:280px; width:calc(33.33% - 4px); display:inline-block; margin:0px;}*/
+/*.our_team .our_team_us .our_team_me:nth-child(2n+0){}*/
+/*.our_team .our_team_us .our_team_me:nth-child(3n+0){left:calc(100% - 280px);}*/
+
+/*.our_team .our_team_us .our_team_me .me_wrapper{position:absolute; left:0px; top:0px; right:0px; bottom:0px; width:280px; height:280px; background:yellow;}*/
+/*.our_team .our_team_us .our_team_me:nth-child(2n+0) .me_wrapper, .our_team .our_team_us .our_team_me:nth-child(5n+0) .me_wrapper{*/
+    /*left:calc(50% - 140px);*/
+/*}*/
+/*.our_team .our_team_us .our_team_me:nth-child(3n+0) .me_wrapper{*/
+    /*left:calc(100% - 280px);*/
+/*}*/
+/*.our_team .our_team_us .our_team_me:nth-child(4n+0) .me_wrapper{*/
+    /*left:0px;*/
+/*}*/
+
+/*.our_team .our_team_us .our_team_me .me_wrapper img{position:absolute; left:0px; top:0px; width:100%;}*/
+
+
+/**** MOBILE VERSION ****/
+
+@media screen and (max-width: 1600px){
+    .header_one,
+    .single_image,
+    .right_text,
+    .two_images,
+    .our_team{width:1200px; left:calc(50% - 600px);}
+}
+
+@media screen and (max-width: 1320px){
+    .header_one,
+    .single_image,
+    .right_text,
+    .two_images,
+    .our_team{width:100%; left:0px;}
+}
+
+@media screen and (max-width: 1200px){
+    .header_one .header_line,
+    .right_text .header_line{width:110px;}
+    .header_one h1{font-size:35px; left:200px; width:calc(100% - 200px);}
+    .right_text .right_text_box{left:200px; width:calc(100% - 200px);}
+
+    .our_team .our_team_us .our_team_me{width:calc(50% - 30px);}
+}
+
+
+@media screen and (max-width: 1000px){
+    .header_one h1{left:0px; width:100%; padding-top:70px; }
+    .right_text .right_text_box{left:0px; width:100%; margin-top:0px; padding-top:50px;}
+
+    .our_team .our_team_us{left:0px; width:calc(100% + 30px); padding-top:70px;}
+
+}
+
+@media screen and (max-width: 800px){
+    .header_one .header_line{top:0px;}
+    .header_one h1{left:0px; width:100%; padding-top:30px; font-size:30px;}
+
+    .right_text .right_text_box p{font-size:14px;}
+
+    .two_images{display:initial;}
+    .two_images .two_images_image{width:100%;  position:relative; display:initial;}
+    .two_images .two_images_image img{left:0px; padding-bottom:30px;}
+
+    .our_team .our_team_us{width:100%;}
+    .our_team .our_team_us .our_team_me{width:100%; margin-right:0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

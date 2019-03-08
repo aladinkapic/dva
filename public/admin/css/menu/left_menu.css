@@ -1,0 +1,57 @@
+#left_menu{position:fixed; left:0px; top:76px; width:320px; height:calc(100% - 70px); overflow:auto; background:#fff; border-bottom:1px solid rgba(0,0,0,0.1); -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75); box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75); transition:all 0.2s; background:#fff; z-index:1800;}
+
+#left_menu .menu_header{position:relative; left:0px; top:20px; width:100%; height:30px; }
+#left_menu .menu_header_2{border-top:1px solid rgba(0,0,0,0.1);}
+#left_menu .menu_header p{font-family: 'Nunito-bold', sans-serif; font-weight:bold; margin-left:20px; margin-top:3px; padding-top:4px; color:#3f6ad8;}
+
+#left_menu .menu_category{position:relative; left:20px; top:20px; width:calc(100% - 40px); height:40px; border-radius:3px;}
+#left_menu .menu_category:hover{ background:#e0f3ff; cursor:pointer;}
+#left_menu .menu_category .menu_c_img{position:absolute; text-align:center; left:0px; top:0px; width:40px; height:40px;}
+#left_menu .menu_category .menu_c_img i{margin-top:10px; color:grey;}
+#left_menu .menu_category p{position:absolute; left:40px; font-family: 'Nunito-bold', sans-serif; margin-top:10px; font-weight:bold;  color:grey;}
+#left_menu .menu_category .menu_c_arrow{position:absolute; right:20px; width:40px; height:40px; text-align:center;}
+#left_menu .menu_category .menu_c_arrow i{margin-top:13px; color:grey;}
+#left_menu .menu_category:hover p, #left_menu .menu_category:hover i{color:#333;}
+
+
+#left_menu .menu_all_subcats{height:0px; overflow:hidden; transition:all 0.2s; position:relative; top:20px;}
+#left_menu .menu_all_subcats .menu_subcategory{position:relative; left:50px; top:0px; width:calc(100% - 90px); border-radius:2px; height:34px; transition:all 0.2s;}
+#left_menu .menu_all_subcats .menu_subcategory:hover{background:#e0f3ff; cursor:pointer;}
+#left_menu .menu_all_subcats .menu_subcategory p{position:absolute; font-family: 'Nunito-bold', sans-serif; margin-top:10px; font-size:15px; left:10px; width:calc(100% - 20px);}
+#left_menu .menu_all_subcats .menu_subcategory .menu_count{position:absolute; right:10px; top:7px; width:20px; height:20px; border-radius:50%; background:#3f6ad8; text-align:center;}
+#left_menu .menu_all_subcats .menu_subcategory .menu_count h5{color:#fff; margin-top:2px; font-family: 'Nunito', sans-serif; font-size:12px;}
+#left_menu .menu_all_subcats .menu_subcategory .menu_line{position:absolute; top:0px; height:100%; width:2px; left:-11px; background:#e0f3ff;}
+
+
+
+
+
+/******************************** mobile ***********************************/
+
+@media screen and (max-width: 1200px){
+    #left_menu{left:-320px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

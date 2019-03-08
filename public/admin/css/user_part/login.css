@@ -1,0 +1,75 @@
+.left_images{position:absolute; left:0px; top:0px; width:32%; height:100%; overflow:hidden;}
+.left_images img{position:absolute; left:-100px; top:0px; height:100%; transition:all 0.2s;}
+.left_images .slide_hidden{opacity:0;}
+
+.left_images .shaddow_part{position:absolute; left:0px; top:0px; width:100%; text-align:center; height:100%; background:rgba(0,0,0,0.4); z-index:100;}
+.left_images .shaddow_part_hidden{display:none;}
+.left_images .shaddow_part .text_part{position:absolute; left:0px; bottom:0px; width:100%; height:auto;}
+.left_images .shaddow_part .text_part h4{margin-top:60%; font-family:apple_r;  font-size:35px; color:#fff;}
+.left_images .shaddow_part .text_part p{color:#fff; margin-left:10%; margin-top:30px; margin-right:10%; font-family:'Lato'; font-size:14px; letter-spacing:3px; font-weight:bold; text-align:justify;}
+
+
+/** form part **/
+.form_part{position:absolute; left:32%; top:0px; width:68%; height:100%;}
+.form_part .form_part_box{position:absolute; top:calc(50% - 250px); left:15%; width:70%; height:460px; background:rgba(0,0,0,0.0);}
+.form_part .form_part_box2{top:calc(50% - 300px);}
+
+.form_part .form_part_box .form_part_logo{position:relative; left:0%; top: 0px; width:100%; height:60px; }
+.form_part .form_part_box .form_part_logo img{position:absolute; left:0px; top:0px; height:100%;}
+.form_part .form_part_box .form_part_logo h1{font-family:apple_t; letter-spacing: 4px; margin-left:20px;}
+
+.form_part .form_part_box .form_part_header{position:relative; left:0%; top:0px; margin-top:25px; width:100%; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom:20px;}
+.form_part .form_part_box .form_part_header h5{font-family:'Lato'; font-weight:bold; padding-top:5px; font-size:24px; margin:0px; margin-left:20px;}
+.form_part .form_part_box .form_part_header h5 span{color:grey; font-size:16px;}
+
+.form_part .form_part_box .form_part_inputs{position:relative; left:0px; top:0px; width:100%; height:120px;  margin-top:10px;}
+.form_part .form_part_box .form_part_inputs2{height:220px;}
+.form_part .form_part_box .form_part_inputs3{height:60px;}
+.form_part .form_part_box .form_part_inputs .form_part_i_inp{position:relative; left:0px; top:0px; width:calc(50% - 2px); height:40px; display:inline-block;}
+.form_part .form_part_box .form_part_inputs .form_part_i_inp p{position:absolute; left:20px; margin:0px; font-family:'Lato'; font-weight:bold; top:12px; color:grey;}
+.form_part .form_part_box .form_part_inputs .form_part_i_inp p span{color:#C52932; font-weight:bold;}
+.form_part .form_part_box .form_part_inputs .form_part_i_inp input{position:absolute; left:20px; top:0px; width:calc(100% - 20px); height:100%; transition:all 0.3s; background:none; border-radius:3px; padding-left:10px; border:2px solid rgba(0,0,0,0.15);}
+
+.form_part .form_part_box .form_part_inputs .form_part_i_inp #check{position:absolute; left:20px; width:12px; height:12px; top:10px;}
+.form_part .form_part_box .form_part_inputs .form_part_i_inp #check_text{position:absolute; left:46px; font-size:12px; top:11px;}
+
+.form_part .form_part_box .form_part_buttons{position:relative; left:0px; top:0px; width:100%; height:60px; }
+.form_part .form_part_box .form_part_buttons_line{border-top:1px solid rgba(0,0,0,0.1); margin-top:20px; padding-top:10px;}
+.form_part .form_part_box .form_part_buttons .button:hover{cursor:pointer;}
+.form_part .form_part_box .form_part_buttons .button{position:absolute; right:0px; top:10px; width:260px; height:40px; border-radius:3px; background:#C52932; text-align:center;}
+.form_part .form_part_box .form_part_buttons .button_text{position:absolute; right:260px; width:200px; height:40px; top:10px;}
+.form_part .form_part_box .form_part_buttons .button p,
+.form_part .form_part_box .form_part_buttons .button_text p{color:#fff; font-family:'Lato'; font-weight:bold; margin-top:10px; margin-left:0px;}
+.form_part .form_part_box .form_part_buttons .button_text p{color:#C52932;}
+
+/** login or register **/
+.form_part .form_part_box .form_part_buttons p{color:#222; font-family:'Lato'; margin-left:20px; font-weight:bold;}
+.form_part .form_part_box .form_part_buttons p a{color:#C52932;}
+
+
+
+@media screen and (max-width: 1200px){
+    .left_images{opacity:0;}
+    .form_part{left:0px; width:100%;}
+}
+
+@media screen and (max-width: 800px){
+    .form_part .form_part_box{ left:50px; width:calc(100% - 100px);}
+}
+
+@media screen and (max-width: 600px){
+    .form_part .form_part_box{left:20px; width:calc(100% - 60px);}
+    .form_part .form_part_box .form_part_inputs .form_part_i_inp{width:100%; margin-bottom:17px; }
+    .form_part .form_part_box .form_part_inputs .form_part_i_inp0{display:none;}
+    .form_part .form_part_box .form_part_inputs .form_part_i_inp1{}
+    .form_part .form_part_box .form_part_buttons{margin-top:60px;}
+    .form_part .form_part_box .form_part_buttons .button{left:20px; width:calc(100% - 20px);}
+    .form_part .form_part_box .form_part_buttons_line{text-align:center;}
+
+    .form_part .form_part_box .form_part_buttons .button_text{top:65px; right:0px; width:100%; text-align:center;}
+}
+
+
+
+
+

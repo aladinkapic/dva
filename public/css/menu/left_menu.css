@@ -1,0 +1,55 @@
+#left_menu{position:fixed; right:calc(-35% - 50px); top:-50px; width:35%; height:calc(100% + 100px); background:#fff; z-index: 1000; -webkit-box-shadow: 0 0 65px rgba(0,0,0,.07); -moz-box-shadow: 0 0 65px rgba(0,0,0,.07); box-shadow: 0 0 65px rgba(0,0,0,.07); transition:all 0.5s;}
+
+#left_menu .exit_menu{position:absolute; text-align:right; right:110px; top:80px; width:40px; height:40px; } 
+#left_menu .exit_menu i{ font-size:30px; margin-top:5px;  }
+#left_menu .exit_menu i:hover{cursor:pointer; color:#FC757B;}
+
+/** Menu languages **/
+
+#left_menu .languages{position:absolute; top:80px; left:60px; width:calc(100% - 200px); height:40px; }
+#left_menu .languages .single_language{position:relative; left:0px; top:65px; height:30px; display: inline-block; border-right:1px solid rgba(0,0,0,0.2); padding:0px 10px;}
+#left_menu .languages .single_language0{padding-left:0px;}
+#left_menu .languages .single_language2{border:none;}
+#left_menu .languages .single_language p{font-family:apple_t; margin-top:7px; font-weight:bold; color:grey;}
+#left_menu .languages .single_language p:hover{cursor:pointer; color:#cee002;}
+
+
+/** menu links **/
+
+#left_menu .menu_links{position:absolute; top:210px; left:60px; width:calc(100% - 170px); height:calc(100% - 420px); overflow:auto;}
+#left_menu .menu_links .menu_link{position:relative; left:0px; top:0px; width:100%; height:80px; margin-top:2px;}
+#left_menu .menu_links .menu_link a{color:grey; font-family:apple_r; font-weight:bold; text-decoration:none; font-size:35px; margin-top:20px; position:absolute;}
+#left_menu .menu_links .menu_link a:hover{color:#222;}
+
+#left_menu .menu_links .menu_sublinks{position:relative; left:0px; top:0px; width:100%; height:0px; transition:all 0.2s; overflow:hidden;}
+#left_menu .menu_links .menu_sublinks .menu_sublink{position:relative; left:0px; top:0px; width:100%; height:40px;}
+#left_menu .menu_links .menu_sublinks .menu_sublink p{position:absolute; font-family:apple_r; font-weight:bold; color:grey; margin-top:12px;}
+#left_menu .menu_links .menu_sublinks .menu_sublink p:hover{cursor:pointer; color:#222;}
+
+
+
+/** copyrights on menu **/
+#left_menu .copyrights{position:absolute; left:60px; bottom:80px; width:calc(100% - 170px); height:50px; }
+#left_menu .copyrights p{font-family:apple_t; letter-spacing:1px; font-weight:bold;}
+#left_menu .copyrights p span{}
+
+
+
+/**** MOBILE VERSION ****/
+
+@media screen and (max-width: 1200px){
+    #left_menu{width:480px; right:-520px;}
+}
+
+@media screen and (max-width: 800px){
+    #left_menu{width:calc(100% + 50px);  right:calc(-100% - 50px); }
+    #left_menu .languages,
+    #left_menu .menu_links{left:20px; width:calc(100% - 90px);}
+    #left_menu .exit_menu{right:70px; z-index:100;}
+}
+
+
+
+
+
+

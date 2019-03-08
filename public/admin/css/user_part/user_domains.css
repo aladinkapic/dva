@@ -1,0 +1,24 @@
+.user_domains_wrapper{position:relative; left:0px; top:0px; width:100%; height:auto; padding-top:30px; padding-bottom:30px; background:#fff; border-radius:3px;}
+.user_domains_wrapper textarea{position:relative; left:15px; top:0px; width:calc(100% - 30px); height:420px;}
+
+.user_domains_wrapper .single_domain{position:relative; left:15px; top:0px; width:calc(100% - 34px); height:40px; border:1px solid rgba(0,0,0,0.1); border-top:0px;}
+.user_domains_wrapper .single_domain_header{border-top:1px solid rgba(0,0,0,0.1);}
+.user_domains_wrapper .single_domain p{position:absolute; left:20px; font-family:apple_t; margin-top:11px;}
+
+.user_domains_wrapper .single_domain .action{position:absolute; right:0px; top:0px; width:120px; height:40px; border-left:1px solid rgba(0,0,0,0.1); text-align:center;}
+.user_domains_wrapper .single_domain .action i{margin-top:12px;}
+.user_domains_wrapper .single_domain .action i:hover{cursor:pointer;}
+
+
+@media screen and (max-width: 800px){
+    .user_domains_wrapper .single_domain p{font-size:14px; font-weight:bold;}
+
+    .user_domains_wrapper .single_domain .action{width:40px;}
+}
+
+
+
+
+
+
+

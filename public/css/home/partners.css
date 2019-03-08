@@ -1,0 +1,61 @@
+#all_partners{position:relative; left:0px; top:0px; width:100%; padding-bottom:50px; text-align:center; padding-top:40px; margin-top:2px; overflow:hidden;}
+
+#all_partners .swiper-container {
+    position:relative; top:0px; width:1400px; height:140px; margin-top:0px; background:none;
+}
+#all_partners .swiper-container:hover{cursor:pointer;}
+#all_partners .swiper-container .swiper-wrapper{padding-bottom:30px; background:none;}
+
+#all_partners .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height:100px;
+
+}
+#all_partners .swiper-slide img{position:absolute; left:0px; top:0px; transition:all 0.2s; right:0px; bottom:30px; max-width:100%; opacity:0.6; max-height:100px; margin:auto;}
+#all_partners .swiper-slide:hover{cursor:pointer;}
+#all_partners .swiper-slide:hover img{opacity:1;}
+
+.swiper-pagination-bullet-active,
+.swiper-notification{background:#cee002;}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:#cee002;}
+
+
+#all_partners .dot{position:absolute; left:0px; top:0px; width:15px; height:15px; background:#fff; z-index:-10;}
+#all_partners .dot .inner_dot{position:absolute; left:6px; top:6px; width:2px; height:2px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; background:rgba(0,0,0,0.2);}
+
+#footer{margin-top:50px;}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {border-radius:0px; width:20px; height:3px;}
+
+
+#all_partners .dots_w{position:absolute; left:0px; top:0px; width:100%; height:100%; overflow:hidden;}
+#all_partners .dots_w img{position:absolute; left:0px; top:0px; width:auto; height:auto;}
+
+/********* MOBILE VERSION ************/
+
+@media screen and (max-width: 1600px){
+    #all_partners .swiper-container{width:1200px;}
+}
+
+@media screen and (max-width: 1320px){
+    #all_partners .swiper-container{left:0px; width:100%;}
+}
+
+
+
+@media screen and (max-width: 400px){
+    #all_partners .swiper-slide img{bottom:30px; max-height:140px; }
+}

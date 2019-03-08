@@ -1,0 +1,35 @@
+.single_category{position:relative; left:15px; top:0px; width:calc(100% - 90px); height:40px; border:1px solid rgba(0,0,0,0.1);}
+.single_category_2{ width:calc(100% - 2px); left:0px; border:1px solid rgba(0,0,0,0); display:flex; border-bottom:1px solid rgba(0,0,0,0.1);}
+
+.all_subcategories{position:relative; left:15px; top:0px; width:calc(100% - 88px);  background:rgba(0,0,0,0.05);}
+
+.single_category p{font-family:poppins_r; margin-left:20px; margin-top:8px;}
+.single_category input{position:relative; left:0px; top:0px; width:calc(33% - 40px); height:40px; border:none; background:none; padding-left:20px; font-family:poppins_r;}
+.single_category_2 input{position:absolute; width:calc(33% - 40px);}
+.single_category_2 .input_2{left:calc(33% - 36px);}
+.single_category_2 .input_3{left:calc(66% - 72px);}
+.single_category .delete_it{position:absolute; right:0px; top:0px; width:40px; height:40px; border-left:1px solid rgba(0,0,0,0.1); text-align:center;}
+.single_category .delete_it i{padding-top:12px;}
+.single_category .delete_it:hover i{color:#FF0D53; cursor:pointer;}
+.single_category .update_it{right:40px;}
+.single_category .see_it{right:80px;}
+
+
+
+.insert_new_category{margin-top:30px; display:flex,}
+.insert_new_category input{width:calc(33.33% - 80px); position:relative; }
+.insert_new_category .save_button{ width:220px; background:#FC757B; color:#fff;}
+.insert_new_category .save_button2{position:absolute; left:calc(100% - 219px);}
+.insert_new_category .save_button:hover{cursor:pointer;}
+
+.insert_new_subcat{margin-top:10px;}
+.insert_new_subcat input{width:calc(33% - 85px);}
+
+.insert_new_subcat .select_arrow{position:absolute; right:220px; top:0px; width:40px; height:40px; border-left:1px solid rgba(0,0,0,0.1); text-align:center;}
+.insert_new_subcat .select_arrow i{margin-top:10px; font-size:22px;}
+.insert_new_subcat .select_arrow i:hover{cursor:pointer;}
+
+.insert_new_subcat .all_categories{position:absolute; left:-1px; top:100%; width:calc(100% - 40px); height:200px; overflow:auto; background:#fff; border:1px solid rgba(0,0,0,0.1); display:none;}
+.insert_new_subcat .all_categories .single_pick_cat{position:relative; left:0px; top:0px ;width:100%; height:40px; }
+.insert_new_subcat .all_categories .single_pick_cat:hover{background:#e0f3ff; cursor:pointer;}
+.insert_new_subcat .all_categories .single_pick_cat p{position:absolute; left:0px; margin-top:10px; font-family:poppins_t; font-size:14px;}

@@ -1,0 +1,4 @@
+.desniDio .kategorije {top:0px; left:0px; width:100%; height:auto; display: inline-block;}
+.desniDio .kategorije td {padding-top: 20px; color:grey; font-size: 20px;}
+.desniDio .kategorije a:link {color:grey; font-size: 20px; text-decoration: none;}
+.desniDio .kategorije a:hover {color:rgba(206, 224, 2, 0.7); text-decoration: none;}

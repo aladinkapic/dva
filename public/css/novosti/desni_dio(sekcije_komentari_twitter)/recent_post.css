@@ -1,0 +1,9 @@
+.desniDio .vijest {display: inline-block; margin-top: 20px;}
+
+.desniDio .vijest a.prvi:link {font-size: 20px;  color:black; text-decoration: none;}
+.desniDio .vijest a.prvi:hover {font-size: 20px; font-weight: bold; color: rgba(206, 224, 2, 0.7); text-decoration: none;}
+
+.desniDio .vijest a.drugi:link {font-size: 20px;  color:black; text-decoration: none; margin-left: 15px;}
+.desniDio .vijest a.drugi:hover {font-size: 20px; font-weight: bold; color: rgba(206, 224, 2, 0.7); text-decoration: none;margin-left: 15px;}
+
+.desniDio .vijest .datum {position:relative; bottom:0px; left:15px; font-size: 15px; color:grey;}

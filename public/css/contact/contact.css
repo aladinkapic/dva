@@ -1,0 +1,149 @@
+/*
+
+OLD CONTACT US
+
+.message {position: relative; top:0px; left:0px; font-family: apple_t; }
+
+.title { position:relative; font-size: 25px; font-weight: bold; margin-top: 45px; margin-left:100px; }
+
+.forma { position:relative; left:0px; top:0px; margin-left:100px; width:30%; }
+.forma input {margin-top:20px; border-radius: 15px; }
+.forma textarea {margin-top:20px; margin-bottom: 20px;}
+.forma .button {background-color:red; float:right; color:white; font-weight: bold; width:150px; height:50px;}
+
+.office { position: relative; font-family: apple_t; margin-top: 25px; background-color: black; color: white; width: 30%; height:auto; float: left;}
+
+.office .title1 { position:relative; font-size: 25px; font-weight: bold; margin-top: 45px; margin-left:30px;  }
+
+.office .text{margin-left: 20px;}
+
+.office .second td {position: relative; padding-left: 20px;  color:white; padding-top: 20px;}
+
+.office .ikone { position: relative; top: 0px; left: 0px; font-size: 20px; margin-left:40px;}
+.office .ikone i {margin-left: 10px; color: white;}
+
+#fields{position:relative; width:600px; left:calc(50% - 380px); margin-top:40px; height:500px;  border-radius:10px; -webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);}
+
+#fields .first_left{position:absolute; bottom:80px; width:60px; height:14px; left:-30px; background:#fff; border-radius:7px; -webkit-box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75); -moz-box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75); box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75);}
+#fields .first_on{position:absolute; bottom:70px; left:0px; height:30px; width:40px; background:#fff;}
+#fields .second_left{position:absolute; bottom:66px; left:-2px; height:14px; background:#fff; border-top-right-radius:7px; border-bottom-right-radius:7px; width:35px; -webkit-box-shadow: inset 0px 0px 8px -2px rgba(0,0,0,0.75); -moz-box-shadow: inset 0px 0px 8px -2px rgba(0,0,0,0.75); box-shadow: inset 0px 0px 8px -2px rgba(0,0,0,0.75);}
+#fields .second_on{position:absolute; bottom:66px; left:-2px; height:14px; width:2px; background:#fff;}
+#fields .third_left{position:absolute; bottom:52px; height:14px; left:-50px; width:55px; border-top-left-radius: 7px; border-bottom-left-radius: 7px; background:#fff; -webkit-box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75); -moz-box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75); box-shadow: -1px 0px 8px -2px rgba(0,0,0,0.75);}
+
+#fields .header{position:relative; left:30px; top:70px; width:calc(100% - 240px); height:78px; }
+#fields .header h4{font-family:apple_r; font-size:30px; color:#524646;}
+
+#fields .form_part{position:relative; left:30px; top:80px; width:calc(100% - 240px); height:auto; margin-top:10px;}
+#fields .form_part .input_field{position:relative; left:0px; top:0px; width:100%; height:30px; border:1px solid rgba(0,0,0,0.1); margin-top:6px; border-radius:4px;}
+#fields .form_part .input_field2{height:100px;}
+#fields .form_part .input_field input, #fields .form_part .input_field textarea{position:absolute; font-family:apple_t; left:0px; top:0px; width:100%; height:100%; border:none; background:none; padding-left:20px; outline:none;}
+#fields .form_part .input_field textarea{resize:none; padding-top:10px; height:calc(100% - 0px);}
+
+#fields .form_part .input_field3{border:none;}
+#fields .form_part .input_field3 p{position:absolute; margin-left:20px; font-family:apple_t; margin-top:6px;}
+#fields .form_part .input_field3 input{position:relative; width:10px; height:10px; }
+#fields .form_part .input_field3 input:hover{cursor:pointer;}
+
+#fields .form_part .input_field5 input:focus,
+#fields .form_part .input_field5 textarea:focus{border-color: rgba(229, 103, 23, 0.8); box-shadow: 0 1px 1px #cee002 inset, 0 0 3px #cee002; outline: 0 none; }
+
+#fields .form_part .input_field3 .button{position:absolute; right:0px; top:20px; text-align:center; width:160px; height:100%; border-radius:3px; background:#FC757B;}
+#fields .form_part .input_field3 .button:hover{cursor:pointer;}
+#fields .form_part .input_field3 .button p{position:relative; margin-left:0px; font-weight:bold; color:#fff;}
+
+
+
+#fields .our_details{position:absolute; right:-160px; width:340px; top:100px; height:500px; border-radius:6px; background:#524646;}
+#fields .our_details .out_right{position:absolute; border-top-right-radius: 7px; border-bottom-right-radius: 7px; background:#524646; height:14px; right:0px; top:0px;}
+#fields .our_details .out_right1{top:70px; width:35px; right:-35px;}
+#fields .our_details .out_right2{top:98px; right:-20px; width:20px;}
+#fields .our_details .out_right3{top:calc(100% - 80px); width:20px; right:-20px;}
+#fields .our_details .out_right4{top:calc(100% - 52px); width:45px; right:-45px;}
+#fields .our_details .in_right{position:absolute; border-top-left-radius: 7px; border-bottom-left-radius: 7px; height:14px; right:0px; background:#fff;}
+#fields .our_details .in_right1{top:84px; width:20px;}
+#fields .our_details .in_right2{top:calc(100% - 66px); width:20px;}
+
+
+#fields .our_details .details_header{position:relative; left:30px; width:calc(100% - 60px); top:0px; margin-top:70px; height:80px;}
+#fields .our_details .details_header h4{font-family:apple_r; color:#fff; font-size:30px;}
+
+#fields .our_details .details_block{position:relative; left:30px; top:0px; width:calc(100% - 60px); height:auto;}
+#fields .our_details .details_block p{font-family:apple_t; color:#fff; font-size:15px; }
+#fields .our_details .details_block1 p{font-size:12px;}
+#fields .our_details .details_block p span{font-size:12px; padding-top:3px;}
+
+
+#fields .our_details .details_block i{position:absolute; color:#FC757B;}
+#fields .our_details .details_block .details_part{position:relative; left:30px; width:calc(100% - 30px); top:0px;}
+
+#fields .our_details .details_block4{margin-top:40px;}
+#fields .our_details .details_block4 i{position:relative;}
+#fields .our_details .details_block4 .icon_wrapper{position:relative; display:inline-block; text-align:center; left:25px; top:0px; width:30px; height:30px;}
+#fields .our_details .details_block4 .icon_wrapper i{color:#fff; font-size:20px;} */
+
+
+#google_map{position:relative; left:0px; top:0px; width:100%; height:60%;}
+
+
+.contact_info{position:relative; left:calc(50% - 600px); margin-top:30px; width:1200px; min-height:200px; padding-bottom:30px; height:auto;}
+.contact_info .header_line{position:absolute; left:0px; top:46px; width:160px; height:4px; background:#cee002;}
+.contact_info .right_text_box{position:relative; left:300px; width:calc(100% - 300px); display:flex;  justify-content:space-between; flex-wrap: wrap;}
+.contact_info .right_text_box h3{font-family:poppins_m; font-size:25px; padding-top:10px;}
+.contact_info .right_text_box h3 span{color:grey; font-size:20px;}
+.contact_info .right_text_box .tinny_header{font-weight:lighter; margin-top:10px; margin-bottom:0px; padding:0px;}
+
+.contact_info .right_text_box p{font-family:poppins_t;  text-align:justify; font-weight:bold; font-size:16px; margin-top:15px; margin-bottom:0px; padding:0px; }
+.contact_info .right_text_box p span{color:grey;}
+.contact_info .right_text_box p i{position:relative; padding-top:8px;}
+.contact_info .right_text_box .bolded_p{font-weight:bold; font-family:poppins_m; margin-top:20px;}
+.contact_info .right_text_box .adress_details{font-family: poppins_m; color:grey;}
+.contact_info .right_text_box .adress_details2{margin-top:44px; padding-bottom:10px;}
+.contact_info .right_text_box .small_grey{margin-top:0px; color:grey;}
+
+.contact_info .right_text_box .split_it{position:relative; left:0px; top:0px; width:50%; height:300px; }
+
+
+/**** Contact form ****/
+.contact_info .right_text_box .name_mail_subject{position:relative; left:0px; top:0px; width:100%; height:45px; display:flex; justify-content:space-between; flex-wrap: wrap; margin-top:40px;}
+.contact_info .right_text_box .name_mail_subject .contact_input_w{position:relative; left:0px; top:0px; width:30%; height:100%; border:1px solid rgba(0,0,0,0.2);  background:rgba(0,0,0,0.05);}
+.contact_info .right_text_box .name_mail_subject .contact_input_w input{position:absolute; left:0px; top:0px; width:100%; height:100%; border:none; outline:none; background:none; padding-left:20px; font-family:poppins_r;}
+.contact_info .right_text_box .name_mail_subject .contact_area_w{position:relative; left:0px; top:0px; width:100%; height:180px; border:1px solid rgba(0,0,0,0.2); margin-top:30px; padding-bottom:50px; background:rgba(0,0,0,0.05);}
+.contact_info .right_text_box .name_mail_subject .contact_area_w textarea{position:absolute; left:20px; top:15px; border:none; background:none; resize:none; font-family:poppins_r; width:calc(100% - 40px); height:calc(100% - 30px); outline:none;}
+.contact_info .right_text_box .name_mail_subject .send_button{position:relative; left:0px; top:0px; width:220px; height:45px; margin-top:30px; background:#cee002; text-align:center;}
+.contact_info .right_text_box .name_mail_subject .send_button:hover{cursor:pointer; background:#FC757B;}
+.contact_info .right_text_box .name_mail_subject .send_button p{text-align:center; font-family:poppins_r; margin-top:11px; color:#333;}
+.contact_info .right_text_box .name_mail_subject .send_button:hover p{color:#fff;}
+
+#footer{margin-top:220px;}
+
+
+/********* MOBILE VERSION ************/
+
+@media screen and (max-width: 1200px){
+    .contact_info .header_line{width:110px;}
+    .contact_info .right_text_box{left:200px; width:calc(100% - 200px);}
+
+    .contact_info{left:0px; width:calc(100% - 0px);}
+    .contact_info .right_text_box .split_it{width:100%; height:auto;}
+}
+
+@media screen and (max-width: 1000px){
+    .contact_info .header_line{position:relative; top:15px;}
+    .contact_info .right_text_box{left:0px; width:100%;}
+}
+
+@media screen and (max-width: 800px){
+    .contact_info .right_text_box .name_mail_subject .contact_input_w{width:100%; margin-top:10px;}
+
+    #footer{margin-top:380px;}
+}
+
+
+@media screen and (max-width: 600px){
+    .contact_info .right_text_box .name_mail_subject .send_button{width:100%;}
+}
+
+
+

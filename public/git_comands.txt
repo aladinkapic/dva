@@ -1,0 +1,22 @@
+- to clone 
+	git clone https://github.com/username/project_name.git
+
+
+- to add
+	to add all files
+		git add .
+	to add specific file
+		git add specific_file.php (for an example git add css/home/slider.css)
+
+- to commit
+	git commit -m "comment here"
+
+- to push
+	git push -u origin master
+
+- to get new version of code
+    git pull
+
+- to create new branch
+    git checkout -b nameofbranch
+    - to check it : git status -> would display name of branch

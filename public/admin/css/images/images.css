@@ -1,0 +1,34 @@
+.images_wrapper{position:relative; left:0px; top:0px; width:100%; padding-top:30px; padding-bottom:30px; background:#fff; margin-top:30px; height:auto; text-align:justify;}
+
+.images_wrapper .single_image{position:relative; top:0px; width:calc(50% - 20px); margin:0px 8px; height:auto; background:red; display:inline-block;}
+.images_wrapper .single_image img{position:relative; left:0px; top:0px; width:100%;}
+
+.images_wrapper .single_image .image_shadow{position:absolute; left:0px; top:0px; width:100%; height:100%; background:rgba(0,0,0,0.7); text-align:left;}
+.images_wrapper .single_image .image_shadow h4{font-family:apple_r; color:#fff; font-size:30px; margin-left:30px; margin-top:100px;}
+.images_wrapper .single_image .image_shadow p{color:#fff; margin-left:30px; font-family:apple_r;  width:calc(100% - 60px); text-align:justify;}
+.images_wrapper .single_image .image_shadow i{position:absolute; right:30px; top:30px; font-size:20px; color:#fff;}
+.images_wrapper .single_image .image_shadow i:hover{cursor:pointer;}
+
+.images_wrapper .add_new_image{position:relative; left:0px; top:0px; width:100%; height:40px; margin-top:30px; text-align:center;}
+.images_wrapper .add_new_image .button{position:absolute; right:15px; top:0px; width:220px; height:40px; background:#3f6ad8;}
+.images_wrapper .add_new_image .button p{color:#fff; font-family:apple_r; margin-top:10px;}
+
+
+
+
+/*** insert image ***/
+
+.images_wrapper .insert_image{position:relative; left:15px; top:0px; width:calc(100% - 30px); height:320px; border:1px solid rgba(0,0,0,0.1);}
+.images_wrapper .insert_image .image_part{position:absolute; left:0px; top:0px; width:260px; height:320px; border-right:1px solid rgba(0,0,0,0.1);}
+.images_wrapper .insert_image .image_part:hover{cursor:pointer;}
+.images_wrapper .insert_image .image_part img{position:absolute; left:0px; top:0px; right:0px; bottom:0px; max-width:90%; max-height:90%; margin:auto;}
+.images_wrapper .insert_image input{position:absolute; left:280px; top:20px; width:calc(100% - 300px); border:1px solid rgba(0,0,0,0.1); height:40px; padding-left:20px;}
+.images_wrapper .insert_image textarea{position:absolute; left:280px; top:80px; width:calc(100% - 300px); height:calc(100% - 160px); resize:none; font-size:14px; font-weight:bold; padding-left:20px; padding-top:20px; font-family:apple_t;}
+.images_wrapper .save_button{position:absolute; right:20px; bottom:20px; width:220px; height:40px; background:#3f6ad8;}
+.images_wrapper .save_button p{color:#fff; font-family:apple_r; margin-top:10px;}
+.images_wrapper .save_button input{position:absolute; left:0px; top:0px; width:100%; height:100%; background:none; border:none; color:#fff; font-family:apple_r; letter-spacing:2px;}
+.images_wrapper .save_button input:hover{cursor:pointer;}
+
+
+
+

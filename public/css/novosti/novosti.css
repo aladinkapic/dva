@@ -1,0 +1,70 @@
+.velikaSlika {position:relative; top:0px; left:0px; width: 95%; height:600px; margin: 0 auto; display: flex; overflow: hidden; }
+
+.lijeviDio {top:0px; left:0px; width: 800px; height:auto; display: inline-block; font-family: apple_t; }
+
+.lijeviDio .naslovTeksta {position:relative; font-size: 50px; font-weight: bold; margin-top: 100px;}
+
+.lijeviDio .velikiTekst {position:relative; font-size: 30px; margin-top: 150px;}
+
+.lijeviDio .obicanTekst {position: relative; font-size: 20px; color:grey; margin-top: 50px;}
+
+.lijeviDio .slika img { top:0px; left:0px; width:100%; height:250px; margin-top: 100px;}
+
+.lijeviDio .zajedno  {position:relative; top:0px; left:0px; width:100%; height:300px; margin-top: 100px;}
+
+.lijeviDio .jedna {position:relative; left:0px; top:0px; width:calc(50% - 20px); overflow:hidden; height:100%; margin-left:30px; display:inline-block;}
+.lijeviDio .jedna img {width:100%; height:100%; }
+
+.lijeviDio .lijeva {margin-left: 0px;}
+
+.lijeviDio .drugiNaslov { position: relative; font-size: 25px; font-weight: bold; margin-top: 50px; }
+
+.lijeviDio .saOkvirom { font-family: playfair display,serif; font-size: 25px; line-height: 1.5; padding: 0; width: 80%; padding-left: 77px; border-left: 7px solid #cee002; margin-top: 80px; }
+
+.lijeviDio .ikone { position: relative; top: 0px; left: 0px; display: inline-block; font-size: 25px; margin-top: 50px; margin-left: 45px;}
+
+.desniDio {top:0px; left:0px; width: 350px; height:auto; float: right; margin-top: 30px;}
+
+.desniDio .search{position: relative;}
+.desniDio .search .polje{background: #f6f6f6;border:1;width:60%;height:50px;border-color:transparent;}
+.desniDio .search .polje:focus{background: none;}
+.desniDio .submit{float:right; height: 50px; background: none; border:0;top: 100px;margin-right:110px;display: inline-block;}
+.desniDio .submit:focus{outline:none;} 
+
+.desniDio .naslov1 {position:relative; font-size: 25px; font-weight: bold;margin-top: 90px;}
+
+.desniDio .donjiTekst{display: inline-block;margin-top:20px; margin-left:40px; color: #999999;font-size: 0.928rem;text-transform: uppercase;font-weight: 600;}
+.desniDio .donjiTekst:hover{text-decoration: none;} 
+
+
+.desniDio .widget {
+	border-top: 1px solid #e1e1e1;
+	font-size: 18px;
+    margin-bottom: 4.5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.desniDio .widget ul {list-style-type: none;
+  margin-top: 30px;
+  padding: 0;}
+.desniDio .widget  li{margin-bottom: 20px;}
+.desniDio .widget  li:last-child{margin-bottom: 0;}
+.desniDio .widget  li a{color: #0099cc; text-decoration: none;}
+.desniDio .widget li a:hover {color:rgba(206, 224, 2, 0.7);}
+.desniDio .widgetDatum {position: relative;left: 20px;font-size: 15px; color:grey; margin-top: 10px;}
+
+
+.desniDio .vijest {display: inline-block; margin-top: 20px;}
+
+.desniDio .vijest a.prvi:link {font-size: 20px;  color:black; text-decoration: none;}
+.desniDio .vijest a.prvi:hover {font-size: 20px; font-weight: bold; color: rgba(206, 224, 2, 0.7); text-decoration: none;}
+
+.desniDio .vijest a.drugi:link {font-size: 20px;  color:black; text-decoration: none; margin-left: 15px;}
+.desniDio .vijest a.drugi:hover {font-size: 20px; font-weight: bold; color: rgba(206, 224, 2, 0.7); text-decoration: none;margin-left: 15px;}
+
+.desniDio .vijest .datum {position:relative; bottom:0px; left:15px; font-size: 15px; color:grey;}
+
+.desniDio .kategorije {top:0px; left:0px; width:100%; height:auto; display: inline-block;}
+.desniDio .kategorije td {padding-top: 20px; color:grey; font-size: 20px;}
+.desniDio .kategorije a:link {color:grey; font-size: 20px; text-decoration: none;}
+.desniDio .kategorije a:hover {color:rgba(206, 224, 2, 0.7); text-decoration: none;}

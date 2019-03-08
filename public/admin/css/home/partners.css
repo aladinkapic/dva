@@ -1,0 +1,33 @@
+.all_partners{position:relative; left:15px; top:0px; width:calc(100% - 90px); display:flex; flex-wrap:wrap;}
+
+.single_partner{position:relative; left:0px; top:0px; width:calc(20% - 7px); margin-right:5px; margin-bottom:5px; height:120px; border:1px solid rgba(0,0,0,0.2); border-radius:3px;}
+.single_partner img{position:absolute; left:0px; top:0px; right:0px; bottom:0px; margin:auto;}
+.single_partner .delete_it{position:absolute; right:10px; top:10px; width:20px; height:20px; background:#333; border-radius:3px; text-align:center;}
+.single_partner .delete_it i{color:#fff; font-size:10px; margin-top:5px;}
+.single_partner .delete_it:hover{background:#C52932;}
+
+
+
+.insert_new{position:relative; left:15px; top:0px; width:calc(100% - 90px); height:40px; border:1px solid rgba(0,0,0,0.1); margin-top:40px;}
+.insert_new i{position:absolute; left:140px; font-size:20px; top:10px;}
+.insert_new:hover i,
+.insert_new:hover p{cursor:pointer; color:#00ecbc;}
+.insert_new p{position:absolute; left:20px; font-family:poppins_r; margin-top:7px;}
+.insert_new input{position:absolute; right:-1px; top:-1px; width:220px; height:calc(100% + 2px); background:#FC757B; border:none; color:#fff; font-family:poppins_r; font-size:16px;}
+.insert_new input:hover{cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

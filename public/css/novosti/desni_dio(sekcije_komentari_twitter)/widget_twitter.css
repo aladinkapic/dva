@@ -1,0 +1,15 @@
+.desniDio .widget {
+	border-top: 1px solid #e1e1e1;
+	font-size: 18px;
+    margin-bottom: 4.5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.desniDio .widget ul {list-style-type: none;
+  margin-top: 30px;
+  padding: 0;}
+.desniDio .widget  li{margin-bottom: 20px;}
+.desniDio .widget  li:last-child{margin-bottom: 0;}
+.desniDio .widget  li a{color: #0099cc; text-decoration: none;}
+.desniDio .widget li a:hover {color:rgba(206, 224, 2, 0.7);}
+.desniDio .widgetDatum {position: relative;left: 20px;font-size: 15px; color:grey; margin-top: 10px;}

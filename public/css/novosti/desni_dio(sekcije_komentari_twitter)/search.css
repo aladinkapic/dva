@@ -1,0 +1,5 @@
+.desniDio .search{position: relative;}
+.desniDio .search .polje{background: #f6f6f6;border:1;width:60%;height:50px;border-color:transparent;}
+.desniDio .search .polje:focus{background: none;}
+.desniDio .submit{float:right; height: 50px; background: none; border:0;top: 100px;margin-right:110px;display: inline-block;}
+.desniDio .submit:focus{outline:none;} 
