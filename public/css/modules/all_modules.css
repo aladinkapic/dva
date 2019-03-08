@@ -50,6 +50,13 @@
 .our_team .our_team_us .our_team_me .mine_wrapper .mine_social{position:absolute; left:20px; bottom:10px; width:calc(100% - 40px); height:25px;}
 .our_team .our_team_us .our_team_me .mine_wrapper .mine_social i{color:#000; font-size:22px; margin-right:10px;}
 
+
+.our_team .our_team_us .our_team_me .mine_wrapper .delete_project{position:absolute; right:10px; top:10px; width:26px; height:26px; text-align:center; background:#333;}
+.our_team .our_team_us .our_team_me .mine_wrapper .delete_project2{right:40px;}
+.our_team .our_team_us .our_team_me .mine_wrapper .delete_project:hover{cursor:pointer; background:#FF0D53;}
+.our_team .our_team_us .our_team_me .mine_wrapper .delete_project2:hover{background:#3f6ad8;}
+.our_team .our_team_us .our_team_me .mine_wrapper .delete_project i{color:#fff; font-size:14px; margin-top:6px;}
+
 /*.our_team .our_team_us .our_team_me{position:relative; left:0px; top:0px; background:red; height:280px; width:calc(33.33% - 4px); display:inline-block; margin:0px;}*/
 /*.our_team .our_team_us .our_team_me:nth-child(2n+0){}*/
 /*.our_team .our_team_us .our_team_me:nth-child(3n+0){left:calc(100% - 280px);}*/

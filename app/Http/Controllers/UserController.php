@@ -26,4 +26,10 @@ class UserController extends Controller
         auth()->logout();
         return redirect('/');
     }
+
+    public function remove_user($cat_id, $type, $id){
+        User::destroy($id);
+
+        return redirect("administrator_content/".$cat_id."/".$type);
+    }
 }

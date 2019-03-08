@@ -130,9 +130,9 @@ class ProjectController extends Controller{
      */
 
     public function destroy_and_redirect($cat_id, $id){
-        //Project::destroy($id);
+        Project::destroy($id);
 
-        //return redirect('/administrator_projects/'.$cat_id);
+        return redirect('/administrator_projects/'.$cat_id);
     }
 
     public function visible_or_not($cat_id, $id, $what){

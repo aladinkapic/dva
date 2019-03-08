@@ -161,6 +161,8 @@ Route::resource('administrator_review', 'ReviewsController');
 Route::resource('administrator_partners', 'PartnersController');
 /*** categories ***/
 Route::resource('administrator_categories', 'CategoriesController');
+/*** users ***/
+Route::get('administrator_users/{cat_id}/{type}/{id}', 'UserController@remove_user');
 
 /*** projects ***/
 Route::resource('administrator_projects', 'ProjectController');

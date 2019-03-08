@@ -185,6 +185,12 @@
                                 @endif
 
                             </div>
+
+                            <a href="/administrator_users/{{$id}}/{{$type}}/{{$architect->id}}">
+                                <div class="delete_project">
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 @endforeach
