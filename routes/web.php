@@ -92,7 +92,10 @@ Route::get('projekti/{id}', function($id){
     $projects   = Project::where('cat_id', '=', $id)->get();
     $subcats    = Category::where('parent', '=', $id)->get();
 
-    return view('projects', compact('projects', 'categories', 'id', 'subcats'));
+    $category_name = Category::where('id', '=', $id)->get()[0]->name;
+
+
+    return view('projects', compact('projects', 'categories', 'id', 'subcats', 'category_name'));
 });
 
 Route::get('projekti/{id}/{cat_id}', function($id, $cat_id){
@@ -100,7 +103,9 @@ Route::get('projekti/{id}/{cat_id}', function($id, $cat_id){
     $projects = Project::where('subcat_id', '=', $cat_id)->get();
     $subcats    = Category::where('parent', '=', $id)->get();
 
-    return view('projects', compact('projects', 'categories', 'id', 'subcats'));
+    $category_name = Category::where('id', '=', $id)->get()[0]->name;
+
+    return view('projects', compact('projects', 'categories', 'id', 'subcats', 'category_name'));
 });
 
 Route::get('projekat/{id}', function($id){

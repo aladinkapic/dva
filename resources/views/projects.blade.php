@@ -16,8 +16,7 @@
     <div class="header_one">
         <div class="header_line"></div>
         <h1>
-            Dizajn - Vizualizacija - Arhitektura<br>
-            Pregled naših projekata
+            {{$category_name}}
         </h1>
     </div>
 
