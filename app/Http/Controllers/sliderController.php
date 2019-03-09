@@ -12,13 +12,7 @@ use Illuminate\Support\Facades\Session; // To use Image model
 
 class sliderController extends Controller{
     public function  __construct(){
-        $this->middleware(function ($request, $next) {
-            if(Auth::guest()) return \redirect('/');
-            if($this->user = Auth::user()->role->name != "root"){
-                return redirect('/');
-            }
-            return $next($request);
-        });
+        $this->middleware('role');
     }
 
     /**

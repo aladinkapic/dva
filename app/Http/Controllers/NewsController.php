@@ -10,8 +10,12 @@ use Illuminate\Support\Facades\Auth;
 use App\Date;
 use App\User;
 
-class NewsController extends Controller
-{
+class NewsController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

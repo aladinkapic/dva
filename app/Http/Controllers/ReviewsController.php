@@ -7,14 +7,9 @@ use App\Image;
 use App\Review;
 
 class ReviewsController extends Controller{
+
     public function  __construct(){
-        $this->middleware(function ($request, $next) {
-            if(Auth::guest()) return \redirect('/');
-            if($this->user = Auth::user()->role->name != "root"){
-                return redirect('/');
-            }
-            return $next($request);
-        });
+        $this->middleware('role');
     }
 
 

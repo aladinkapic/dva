@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Category;
 
-class UserController extends Controller
-{
+class UserController extends Controller{
     public function login(Request $request){
         $this->validate($request, [
             'email' => 'required',

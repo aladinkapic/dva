@@ -11,6 +11,11 @@ use App\Image;
 use Illuminate\Support\Facades\Session; // To use Image mo
 
 class ContentController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

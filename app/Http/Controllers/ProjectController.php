@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class ProjectController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

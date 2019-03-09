@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 use App\Image;
 use App\Partner;
 
-class PartnersController extends Controller
-{
+class PartnersController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

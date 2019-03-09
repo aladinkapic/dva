@@ -6,8 +6,12 @@ use App\News;
 use Illuminate\Http\Request;
 use App\NewsCategories;
 
-class NewsCategoriesController extends Controller
-{
+class NewsCategoriesController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

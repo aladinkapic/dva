@@ -5,8 +5,12 @@ namespace App\Http\Controllers;
 use App\View;
 use Illuminate\Http\Request;
 
-class ViewController extends Controller
-{
+class ViewController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *

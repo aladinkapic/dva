@@ -150,6 +150,9 @@ Route::get('o-nama', function(){
     return view('about', compact('categories', 'architects', 'engineers', 'title', 'content',  'images'));
 });
 
+
+
+
 /*
 |--------------------------------------------------------------------------
 | ADMIN ROUTES
@@ -213,7 +216,7 @@ Route::post('save_user', 'ContentController@save_user');
 Route::get('delete_content/{id}/{type}/{what}/{where}', 'ContentController@delete_content');
 
 
-Route::get('views_per_month/{m}/{y}', function($m, $y){
+Route::get('views_per_month/{m}/{y}' , function($m, $y){
 
     if($m != 0) $views = View::where('month', '=', (int)$m)->where('year', '=', (int)$y)->get();
     else $views = View::where('year', '=', (int)$y)->get();
@@ -226,4 +229,6 @@ Route::get('views_per_month/{m}/{y}', function($m, $y){
     $views = json_encode($all_views);
 
     return view('admin.analytics.views_per_month', compact('m', 'y', 'views'));
-});
+})->middleware('role');
+
+

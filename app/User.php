@@ -33,6 +33,10 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
+    public function is_admin(){
+        echo $role = $this->role();
+    }
+
     public function image(){
         return $this->belongsTo('App\Image', 'user_image');
     }

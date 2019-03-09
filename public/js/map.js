@@ -14,7 +14,7 @@ function init() {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(43.83976304559361 , 18.324306049942948),
         map: map,
-        icon: 'icons/marker.png',
+        icon: 'images/marker.png',
         title: 'Mi smo ovdje :)'
     });
 }

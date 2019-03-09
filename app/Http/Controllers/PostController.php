@@ -8,6 +8,11 @@ use App\Image; // To use Image model
 use Illuminate\Support\Facades\Session;
 
 class PostController extends Controller{
+
+    public function  __construct(){
+        $this->middleware('role');
+    }
+
     /**
      * Display a listing of the resource.
      *
