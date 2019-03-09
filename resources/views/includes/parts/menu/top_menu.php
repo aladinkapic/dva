@@ -7,7 +7,7 @@
 
     <div class="menu_social">
         <div class="menu_social_icons menu_social_icons0">
-            <p><span>POZOVITE NAS</span> (+387) 61 317 462</p>
+            <p><span>POZOVITE NAS</span> (+387) 61 317 642</p>
         </div>
         <div class="menu_social_icons">
             <div class="social_icon">
