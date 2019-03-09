@@ -11,58 +11,7 @@
 @section('other_js_links')
     <script src="/admin/js/analytics/options.js"></script>
 
-    <script>
-        var arr = JSON.parse('<?php echo $views;?>');
 
-        var header = 'Broj pregleda za ' + '<?php echo get_month($m); ?>';
-
-        window.onload = function() {
-            var dataPoints = [];
-
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                exportEnabled: true,
-                theme: "light3",
-                zoomEnabled: true,
-                zoomType: "xy",
-                title: {
-                    text: header,
-                    fontFamily: "apple_r",
-                    padding: 20
-                },
-                axisY: {
-                    title: "Pregledi",
-                    titleFontSize: 24,
-                    gridThickness: 0.2,
-                    includeZero: false,
-                    margin:30,
-                },axisX:{
-                    margin: 30,
-                    interval: 1,
-                    startValue:1,
-                    endValue:31
-                },
-                data: [{
-                    type: "line",
-                    yValueFormatString: "0.## Pregleda",
-                    dataPoints: dataPoints
-                }]
-            });
-
-            function addData(data) {
-                for (var i = 0; i < data.length; i++) {
-                    dataPoints.push({
-                        x: data[i]['x'],
-                        y: data[i]['y']
-                    });
-                }
-                chart.render();
-            }
-
-            addData(arr);
-
-        }
-    </script>
 @stop
 
 @section('header_icon') fa-chart-line @stop
@@ -153,4 +102,60 @@
 
     <div id="chartContainer"></div>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script>
+        var arr = JSON.parse('<?php echo $views;?>');
+
+        var header = 'Broj pregleda za ' + '<?php echo get_month($m); ?>';
+
+        window.onload = function() {
+            var dataPoints = [];
+            console.log(dataPoints);
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                exportEnabled: true,
+                theme: "light3",
+                zoomEnabled: true,
+                zoomType: "xy",
+                title: {
+                    text: header,
+                    fontFamily: "apple_r",
+                    padding: 20
+                },
+
+                axisY: {
+                    title: "Pregledi",
+                    titleFontSize: 24,
+                    gridThickness: 0.2,
+                    includeZero: false,
+                    margin:30,
+                },axisX:{
+                    margin: 30,
+                    interval: 1,
+                    startValue:1,
+                    endValue:31
+                },
+                data: [{
+                    type: "line",
+                    yValueFormatString: "0.## Pregleda",
+                    dataPoints: dataPoints
+                }]
+            });
+
+            function addData(data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    dataPoints.push({
+                        x: parseInt(data[i]['x']),
+                        y: parseInt(data[i]['y'])
+                    });
+                }
+                chart.render();
+            }
+
+            addData(arr);
+
+        }
+    </script>
 @stop

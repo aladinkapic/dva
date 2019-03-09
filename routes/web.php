@@ -215,8 +215,8 @@ Route::get('delete_content/{id}/{type}/{what}/{where}', 'ContentController@delet
 
 Route::get('views_per_month/{m}/{y}', function($m, $y){
 
-    $views = View::where('month', '=', (int)$m)->where('year', '=', (int)$y)->get();
-
+    if($m != 0) $views = View::where('month', '=', (int)$m)->where('year', '=', (int)$y)->get();
+    else $views = View::where('year', '=', (int)$y)->get();
     $all_views = array();
     foreach($views as $view){
         $point = array("x" => $view->day , "y" => $view->views);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Category;
 
 class UserController extends Controller
 {
@@ -18,7 +19,9 @@ class UserController extends Controller
             auth()->login($user);
             return redirect('/views_per_month/'.(int)date('m').'/'.date('y'));
         }else{
-            return view('login');
+            $categories = Category::all();
+
+            return view('login', compact('categories'));
         }
     }
 
