@@ -61,7 +61,10 @@
     - added new feature as slider modul
     - finnished all pages - contact - about us - home - projects - single project => dynamic workflow
     - updated version of main slider
-    
+
+##### 8 - 9 March 2019
+    - display specific project 
+    - created news section    
     
     
     
