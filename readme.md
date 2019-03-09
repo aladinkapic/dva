@@ -65,6 +65,7 @@
 ##### 8 - 9 March 2019
     - display specific project 
     - created news section    
+    - secured administration with role middleware
     
     
     
