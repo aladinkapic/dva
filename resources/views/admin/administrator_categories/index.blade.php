@@ -41,10 +41,6 @@
                     <i class="fas fa-eye"></i>
                 </div>
 
-                <div class="delete_it">
-                    <i class="fas fa-trash-alt"></i>
-                </div>
-
                 {{ Form::open(array('url' => 'administrator_categories/' . $category->id)) }}
                 {{ Form::hidden('_method', 'DELETE') }}
                 <label for="delete_button@php echo $counter; @endphp">

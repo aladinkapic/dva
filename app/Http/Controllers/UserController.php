@@ -16,7 +16,7 @@ class UserController extends Controller
         $user = User::where('email', $request->email)->first();
         if($user->password == $request->password){
             auth()->login($user);
-            return redirect('/administrator');
+            return redirect('/views_per_month/'.(int)date('m').'/'.date('y'));
         }else{
             return view('login');
         }

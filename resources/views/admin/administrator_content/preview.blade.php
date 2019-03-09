@@ -64,93 +64,95 @@
     @php $counter = 0; @endphp
     @foreach($content as $part)
         @if($part->type == $type)
-            @if($part->what == 'huge_header')
-                <div class="header_one preview_item">
-                    <div class="header_line"></div>
-                    <h1>
-                        {!! nl2br($part->title ) !!}
-                    </h1>
-                    <div class="delete_it_w">
-                        <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
-                            <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
-                        </a>
-                    </div>
-                </div>
-
-            @endif
-            @if($part->what == 'header_and_text')
-                <div class="right_text preview_item">
-                    <div class="header_line"></div>
-                    <div class="right_text_box">
-                        <h3>{{$part->title}}</h3>
-                        <p>
-                            {!! nl2br($part->detailed ) !!}
-                        </p>
-                    </div>
-                    <div class="delete_it_w">
-                        <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
-                            <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
-                        </a>
-                    </div>
-                </div>
-            @endif
-
-            @if($part->what == 'single_image')
-                <div class="single_image preview_item">
-                    <div class="swiper-container swiper1">
-                        <div class="swiper-wrapper">
-                            @foreach($images as $image)
-                                <div class="swiper-slide">
-                                    <img src="/uploaded_images/{{$image->name}}" alt="">
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination1"></div>
-
-                        <div class="delete_it_w" style="z-index:100;">
+            @if($part->post_id == $id)
+                @if($part->what == 'huge_header')
+                    <div class="header_one preview_item">
+                        <div class="header_line"></div>
+                        <h1>
+                            {!! nl2br($part->title ) !!}
+                        </h1>
+                        <div class="delete_it_w">
                             <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
                                 <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Swiper JS -->
-                    <script src="/swipe/dist/js/swiper.min.js"></script>
-
-                    <script>
-                        var swiper = new Swiper('.swiper1', {
-                            slidesPerView: 1,
-                            spaceBetween: 30,
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            }
-                        });
-                    </script>
-
-                </div>
-            @endif
-
-            @if($part->what == 'two_images')
-                <div class="two_images preview_item" style="left:15px; width:calc(100% - 90px);">
-                    <div class="two_images_image">
-                        <img src="/uploaded_images/{{$part->image->name}}" alt="">
+                @endif
+                @if($part->what == 'header_and_text')
+                    <div class="right_text preview_item">
+                        <div class="header_line"></div>
+                        <div class="right_text_box">
+                            <h3>{{$part->title}}</h3>
+                            <p>
+                                {!! nl2br($part->detailed ) !!}
+                            </p>
+                        </div>
+                        <div class="delete_it_w">
+                            <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
+                                <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="two_images_image two_images_image2">
-                        <img src="/uploaded_images/{{$part->image2->name}}" alt="">
+                @endif
+
+                @if($part->what == 'single_image')
+                    <div class="single_image preview_item">
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                @foreach($images as $image)
+                                    <div class="swiper-slide">
+                                        <img src="/uploaded_images/{{$image->name}}" alt="">
+                                    </div>
+                                @endforeach
+                            </div>
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination1"></div>
+
+                            <div class="delete_it_w" style="z-index:100;">
+                                <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
+                                    <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="/swipe/dist/js/swiper.min.js"></script>
+
+                        <script>
+                            var swiper = new Swiper('.swiper1', {
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                }
+                            });
+                        </script>
+
                     </div>
-                    <div class="delete_it_w">
-                        <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
-                            <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
-                        </a>
+                @endif
+
+                @if($part->what == 'two_images')
+                    <div class="two_images preview_item" style="left:15px; width:calc(100% - 90px);">
+                        <div class="two_images_image">
+                            <img src="/uploaded_images/{{$part->image->name}}" alt="">
+                        </div>
+                        <div class="two_images_image two_images_image2">
+                            <img src="/uploaded_images/{{$part->image2->name}}" alt="">
+                        </div>
+                        <div class="delete_it_w">
+                            <a href="/delete_content/{{$part->id}}/{{$type}}/header/{{$id}}">
+                                <div class="delete_it" title="Obrišite"> <i class="fas fa-trash-alt"></i> </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                @endif
             @endif
         @endif
     @endforeach

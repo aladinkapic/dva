@@ -87,6 +87,34 @@
         </a>
     </div>
 
+
+    <div class="menu_category" onclick="get_subcategory('<?php echo $menu_counter++; ?>');" >
+        <div class="menu_c_img">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <p>Novosti</p>
+        <div class="menu_c_arrow">
+            <i class="fas fa-icon fa-angle-down"></i>
+        </div>
+    </div>
+    <div class="menu_all_subcats">
+        <a href="/administrator_news_categories">
+            <div class="menu_subcategory">
+                <p>Kategorije novosti</p>
+                <div class="menu_line"></div>
+            </div>
+        </a>
+        <a href="/administrator_news/create ">
+            <div class="menu_subcategory">
+                <p>Objavite novi post</p>
+                <div class="menu_line"></div>
+            </div>
+        </a>
+    </div>
+
+
+
+
     <div class="menu_category" onclick="get_subcategory('<?php echo $menu_counter++; ?>');" >
         <div class="menu_c_img">
             <i class="far fa-calendar-alt"></i>
@@ -107,6 +135,10 @@
 
 
 
+    <!-- Personal data -->
+    <div class="menu_header menu_header_2">
+        <p>PODRŠKA </p>
+    </div>
 
     <!-- Centar za podršku -->
     <div class="menu_category" onclick="get_subcategory('<?php echo $menu_counter++; ?>');">
@@ -178,7 +210,7 @@
     <div class="menu_header menu_header_2">
         <p>SESIJE</p>
     </div>
-    <a href="logout.php">
+    <a href="/logout">
         <div class="menu_category">
             <div class="menu_c_img">
                 <i class="fas fa-power-off"></i>

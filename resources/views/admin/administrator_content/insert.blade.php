@@ -163,7 +163,7 @@
                         <div class="user_image_part">
                             <img src="" id="project_image" alt="">
                             <div class="image_shadow">
-                                <h1>1300 X 580</h1>
+                                <h1>300 x 300</h1>
                             </div>
                         </div>
                     </label>

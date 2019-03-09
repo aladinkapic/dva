@@ -9,6 +9,7 @@ use App\Category;
 use App\User;
 use App\View;
 use App\Content;
+use App\News;
 use App\Http\Controllers\Auth;
 /*
 |--------------------------------------------------------------------------
@@ -74,17 +75,25 @@ Route::get('kontakt', function(){
     return view('contact', compact('categories'));
 });
 
-Route::get('novosti', function(){
+Route::get('novosti/{page}', function($page){
     $categories = Category::all();
+    $news = News::all();
 
 
-    return view('news', compact('categories'));
+    return view('news', compact('categories','news'));
 });
-Route::get('novost', function(){
+Route::get('novost/{title}', function($title){
     $categories = Category::all();
 
+    $id = News::where('title', '=', $title)->get()[0]['id'];
 
-    return view('new', compact('categories'));
+    $images = ''; // empty for not throwing exception
+    $content = Content::where('post_id', '=', $id)->where('type', '=', 'news')->get();
+    if(count(Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=','news')->get(['hash']))) $images = Image::where('hash', '=',  Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=','news')->get(['hash'])[0]['hash'])->get();
+
+
+
+    return view('new', compact('categories', 'content', 'images'));
 });
 
 Route::get('projekti/{id}', function($id){
@@ -111,13 +120,13 @@ Route::get('projekti/{id}/{cat_id}', function($id, $cat_id){
 
 Route::get('projekat/{id}', function($id){
     $categories = Category::all();
-    $content = Content::where('post_id', '=', $id)->get();
+    $content = Content::where('post_id', '=', $id)->where('type', '=', 'project')->get();
 
 
 
     $images = '';
 
-    if(count(Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->get(['hash']))) $images = Image::where('hash', '=',  Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->get(['hash'])[0]['hash'])->get();
+    if(count(Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=','project')->get(['hash']))) $images = Image::where('hash', '=',  Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=','project')->get(['hash'])[0]['hash'])->get();
 
 
 
@@ -164,7 +173,16 @@ Route::resource('administrator_categories', 'CategoriesController');
 /*** users ***/
 Route::get('administrator_users/{cat_id}/{type}/{id}', 'UserController@remove_user');
 
-/*** projects ***/
+
+/**************************************************** NEWS ************************************************************/
+
+
+Route::resource('administrator_news_categories', 'NewsCategoriesController');
+Route::resource('administrator_news', 'NewsController');
+Route::get('administrator_news/{id}/{page}', 'NewsController@show_with_page');
+
+/************************************************** PROJECTS **********************************************************/
+
 Route::resource('administrator_projects', 'ProjectController');
 Route::get('administrator_projects/{cat_id}/{project_id}', 'ProjectController@destroy_and_redirect');
 Route::get('administrator_projects/{cat_id}/{project_id}/{update}', 'ProjectController@visible_or_not');

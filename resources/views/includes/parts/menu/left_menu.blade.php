@@ -40,7 +40,7 @@
             {{--</div>--}}
         </div>
         <div class="menu_link">
-            <a href="#">NOVOSTI</a>
+            <a href="/novosti/1">NOVOSTI</a>
         </div>
         <div class="menu_link">
             <a href="/o-nama">O NAMA</a>

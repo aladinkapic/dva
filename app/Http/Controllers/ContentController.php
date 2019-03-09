@@ -97,11 +97,12 @@ class ContentController extends Controller{
     public function show_content($id, $type){
         if($type == 'project') $title = Project::find($id)->title;
         else if($type == 'aboutus') $title = 'O nama';
+        else if($type == 'news') $title = 'Novosti';
         $content = Content::all();
 
         $images = '';
 
-        if(count(Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->get(['hash']))) $images = Image::where('hash', '=',  Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->get(['hash'])[0]['hash'])->get();
+        if(count(Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=', $type)->get(['hash']))) $images = Image::where('hash', '=',  Content::where('post_id', '=', $id)->where('what', '=', 'single_image')->where('type', '=', $type)->get(['hash'])[0]['hash'])->get();
 
         $architects = User::where('what', '=', 'arhitecture_gays')->get();
         $engineers  = User::where('what', '=', 'engineers')->get();

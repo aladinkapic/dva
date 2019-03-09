@@ -69,9 +69,16 @@ function choose_category(id, name){
 }
 
 
+
 function choose_subcategory(id, name){
     document.getElementById("subcategory_id").value = id;
     document.getElementById("object_subcategory").value = name;
     open_subcats_w();
 }
 
+function choose_news_category(id, name){
+    document.getElementById("object_category").value = name;
+    document.getElementById("category_id").value = id;
+
+    open_subcats();
+}

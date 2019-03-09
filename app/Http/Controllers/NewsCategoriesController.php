@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
-use App\Category;
+use App\NewsCategories;
 
-class CategoriesController extends Controller
+class NewsCategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +14,9 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $categories = Category::all();
-        return view('admin.administrator_categories.index', compact('categories'));
+        $news_cats = NewsCategories::all();
+
+        return view('admin.admin_news_categories.index', compact('news_cats'));
     }
 
     /**
@@ -22,9 +24,8 @@ class CategoriesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(){
+
     }
 
     /**
@@ -34,24 +35,15 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        $category = new Category();
+        $new_cat = new NewsCategories();
 
-        if(isset($request->name)){
-            $category->name     = $request->name;
-            $category->name_en  = $request->name_en;
-            $category->name_de  = $request->name_de;
+        $new_cat->name    = $request->name;
+        $new_cat->name_en = $request->name_eng;
+        $new_cat->name_de = $request->name_de;
 
-            $category->save();
+        $new_cat->save();
 
-            return redirect('administrator_categories');
-        }else if(isset($request->parent)){
-            $category->name     = $request->parent;
-            $category->name_eng = $request->parent_eng;
-            $category->name_de  = $request->parent_de;
-            $category->parent = $request->parent_id;
-            $category->save();
-            return redirect('administrator_subcategories');
-        }
+        return redirect('/administrator_news_categories');
     }
 
     /**
@@ -84,13 +76,15 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id){
-        $category = Category::find($id);
-        $category->name     = $request->name;
-        $category->name_eng = $request->name_eng;
-        $category->name_de  = $request->name_de;
-        $category->update();
+        $news_cats = NewsCategories::find($id);
 
-        return redirect('administrator_categories');
+        $news_cats->name    = $request->name;
+        $news_cats->name_en = $request->name_eng;
+        $news_cats->name_de = $request->name_de;
+
+        $news_cats->update();
+
+        return redirect('/administrator_news_categories');
     }
 
     /**
@@ -100,7 +94,8 @@ class CategoriesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id){
-        Category::destroy($id);
-        return redirect('administrator_categories');
+        NewsCategories::destroy($id);
+
+        return redirect('/administrator_news_categories');
     }
 }
